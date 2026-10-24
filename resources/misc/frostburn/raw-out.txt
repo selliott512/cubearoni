@@ -1,0 +1,25 @@
+0	0		0	0
+3	3	M2 r U R' U r U2 r' U M'	10	9.5
+3	3 U	F2 f' d R' U r U2 r' U M', F2 f' U F' U f U2 f' U S	10	17.8, 23.3
+3	3 U2	M' U r' U2 r U R' U M2 r	10	9.5
+3	3 U'	F' f2 R f' d R f2 L' D M', S U f' U2 f U F' U F2 f'	10	20.8, 23.3
+4	4	R' M2 F' r U' R' F2 R U' M'	10	8.5
+4	4 U	F f2 r' U L' u' r2 U f' M, F f2 r' U r' f' r2 F U' S	10	21.1, 23.3
+4	4 U2	M' U' R f2 r' f' U f' R' M2	10	14.6
+4	4 U'	F2 f U' F d' R' F2 R U' M', S U' F R2 F' U' f R' F f2	10	18.0, 23.1
+F	F	R2 F2 M2 r F r' F2 R U' r U2 M' U'	13	9.5
+F	F U	F2 R2 F2 f l' u R2 U' f r' f2 M', M U2 r' U R' F2 r F' R' M' F2 R2	12	17.4, 18.1
+F	F U2	F' r u' r2 u L' U2 u r2 u2 f M', S U' F2 r2 F' f2 U F' r2 F U' f	12	16.4, 22.3
+F	F U'	M' U2 r U' R f2 R' U R M2 f2 R2	12	13.1
+F	F y	R' F r' F2 R U' R' M2 F2 r2 U M' U2	13	9.3
+F	F y U	r2 f2 R' M' f' u f2 u' f R' U2 M'	12	15.6
+Ga	Ga	U' f2 M2 U R2 U' R2 D R2 u' F2 R2, U' f2 M2 U R2 U' R2 u F2 u' r2 f2	12	13.9, 14.3
+Ga	Ga U	F2 M2 U F2 u' R2 u R2 U' r2 F2 U2	12	11.4
+Ga	Ga U2	U f2 M2 U R2 U' R2 D R2 u' F2 R2, U f2 M2 U R2 U' R2 u F2 u' r2 f2	12	13.9, 14.3
+Ga	Ga U'	f2 M2 U R2 U' R2 D R2 u' F2 R2, f2 M2 U R2 U' R2 u F2 u' r2 f2	11	14.2, 14.6
+Ga	Ga y	F2 M2 U F2 u' R2 u R2 U' r2 F2 U'	12	11.4
+Ga	Ga y U	F f R2 F' f' R' U r' F2 R F' r	12	12.9
+O	O		0	0
+O	O U	U'	1	2.0
+O	O U2	U2	1	7.0
+O	O U'	U	1	1.0

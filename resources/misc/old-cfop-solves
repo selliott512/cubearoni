@@ -1,0 +1,188 @@
+
+%%% Scramble 1 %%%
+phase: CROSS time:   6 moves:  5
+CROSS phase moves: RF2R2LB'
+phase:   F2L time: 369 moves: 22
+F2L phase moves: RU'R'F'U'FU'LUL'U2FUF'U2BUB'U'BU2B'
+phase:   OLL time:   1 moves:  7
+OLL phase moves: UBULU'L'B'
+phase:   PLL time:   1 moves: 19
+PLL phase moves: U2U2RB'R'FRBR'F'RBR'FRB'R'F'U'
+solver: cfop             time:   378 msecs moves:  51
+
+Cube piece locations and twists:
+  LDB @ (0,0,0) twist=0
+   LD @ (0,0,1) twist=0
+  LDF @ (0,0,2) twist=0
+   LB @ (0,1,0) twist=0
+   LF @ (0,1,2) twist=0
+  LUB @ (0,2,0) twist=0
+   LU @ (0,2,1) twist=0
+  LUF @ (0,2,2) twist=0
+   DB @ (1,0,0) twist=0
+   DF @ (1,0,2) twist=0
+   UB @ (1,2,0) twist=0
+   UF @ (1,2,2) twist=0
+  RDB @ (2,0,0) twist=0
+   RD @ (2,0,1) twist=0
+  RDF @ (2,0,2) twist=0
+   RB @ (2,1,0) twist=0
+   RF @ (2,1,2) twist=0
+  RUB @ (2,2,0) twist=0
+   RU @ (2,2,1) twist=0
+  RUF @ (2,2,2) twist=0
+
+RF2R2LB'RU'R'F'U'FU'LUL'U2FUF'U2BUB'U'BU2B'UBULU'L'B'RB'R'FRBR'F'RBR'FRB'R'F'U'
+
+    UUU
+    UUU
+    UUU
+    ...
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+    ...
+    DDD
+    DDD
+    DDD
+
+%%% Scramble 2 %%%
+phase: CROSS time:   6 moves:  6
+CROSS phase moves: U'D'RD'B'L'
+phase:   F2L time: 176 moves: 25
+F2L phase moves: B'UBLUL'F'U2FUR'U'RL'U2LB'U2BBUB'B'UB
+phase:   OLL time:   2 moves: 13
+OLL phase moves: U2BULU'L'B'FRUR'U'F'
+phase:   PLL time:   1 moves: 11
+PLL phase moves: U'R'FR'B2RF'R'B2R2U2
+solver: cfop             time:   185 msecs moves:  53
+
+Cube piece locations and twists:
+  LDB @ (0,0,0) twist=0
+   LD @ (0,0,1) twist=0
+  LDF @ (0,0,2) twist=0
+   LB @ (0,1,0) twist=0
+   LF @ (0,1,2) twist=0
+  LUB @ (0,2,0) twist=0
+   LU @ (0,2,1) twist=0
+  LUF @ (0,2,2) twist=0
+   DB @ (1,0,0) twist=0
+   DF @ (1,0,2) twist=0
+   UB @ (1,2,0) twist=0
+   UF @ (1,2,2) twist=0
+  RDB @ (2,0,0) twist=0
+   RD @ (2,0,1) twist=0
+  RDF @ (2,0,2) twist=0
+   RB @ (2,1,0) twist=0
+   RF @ (2,1,2) twist=0
+  RUB @ (2,2,0) twist=0
+   RU @ (2,2,1) twist=0
+  RUF @ (2,2,2) twist=0
+
+U'D'RD'B'L'B'UBLUL'F'U2FUR'U'RL'U2LB'U2B2UB2UBU2BULU'L'B'FRUR'U'F'U'R'FR'B2RF'R'B2R2U2
+
+    UUU
+    UUU
+    UUU
+    ...
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+    ...
+    DDD
+    DDD
+    DDD
+
+%%% Scramble 3 %%%
+phase: CROSS time:   6 moves:  6
+CROSS phase moves: U'D2L'BD'F
+phase:   F2L time: 198 moves: 30
+F2L phase moves: R'U2RFU'F'LU'L'UF'U2FRU2R'LU'L'UR'U'RLUL'U'LU2L'
+phase:   OLL time:   1 moves: 14
+OLL phase moves: UB'U'R'URBU'F'L'U'LUF
+phase:   PLL time:   0 moves: 10
+PLL phase moves: UR'FR'B2RF'R'B2R2
+solver: cfop             time:   206 msecs moves:  60
+
+Cube piece locations and twists:
+  LDB @ (0,0,0) twist=0
+   LD @ (0,0,1) twist=0
+  LDF @ (0,0,2) twist=0
+   LB @ (0,1,0) twist=0
+   LF @ (0,1,2) twist=0
+  LUB @ (0,2,0) twist=0
+   LU @ (0,2,1) twist=0
+  LUF @ (0,2,2) twist=0
+   DB @ (1,0,0) twist=0
+   DF @ (1,0,2) twist=0
+   UB @ (1,2,0) twist=0
+   UF @ (1,2,2) twist=0
+  RDB @ (2,0,0) twist=0
+   RD @ (2,0,1) twist=0
+  RDF @ (2,0,2) twist=0
+   RB @ (2,1,0) twist=0
+   RF @ (2,1,2) twist=0
+  RUB @ (2,2,0) twist=0
+   RU @ (2,2,1) twist=0
+  RUF @ (2,2,2) twist=0
+
+U'D2L'BD'FR'U2RFU'F'LU'L'UF'U2FRU2R'LU'L'UR'U'RLUL'U'LU2L'UB'U'R'URBU'F'L'U'LUFUR'FR'B2RF'R'B2R2
+
+    UUU
+    UUU
+    UUU
+    ...
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+    ...
+    DDD
+    DDD
+    DDD
+
+%%% Scramble 4 %%%
+phase: CROSS time:   5 moves:  6
+CROSS phase moves: R'L'F'LDB'
+phase:   F2L time: 191 moves: 25
+F2L phase moves: F'UFRUR'R'URLUL'R'URFUF'R'URUBUB'
+phase:   OLL time:   0 moves: 17
+OLL phase moves: U2U2FRUR'U'F'U2RUR'U'R'FRF'
+phase:   PLL time:   1 moves: 13
+PLL phase moves: UL'UL'U'L'U'L'ULUL2U2
+solver: cfop             time:   199 msecs moves:  58
+
+Cube piece locations and twists:
+  LDB @ (0,0,0) twist=0
+   LD @ (0,0,1) twist=0
+  LDF @ (0,0,2) twist=0
+   LB @ (0,1,0) twist=0
+   LF @ (0,1,2) twist=0
+  LUB @ (0,2,0) twist=0
+   LU @ (0,2,1) twist=0
+  LUF @ (0,2,2) twist=0
+   DB @ (1,0,0) twist=0
+   DF @ (1,0,2) twist=0
+   UB @ (1,2,0) twist=0
+   UF @ (1,2,2) twist=0
+  RDB @ (2,0,0) twist=0
+   RD @ (2,0,1) twist=0
+  RDF @ (2,0,2) twist=0
+   RB @ (2,1,0) twist=0
+   RF @ (2,1,2) twist=0
+  RUB @ (2,2,0) twist=0
+   RU @ (2,2,1) twist=0
+  RUF @ (2,2,2) twist=0
+
+R'L'F'LDB'F'UFRUR2URLUL'R'URFUF'R'URUBUB'FRUR'U'F'U2RUR'U'R'FRF'UL'UL'U'L'U'L'ULUL2U2
+
+    UUU
+    UUU
+    UUU
+    ...
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+LLL.FFF.RRR.BBB
+    ...
+    DDD
+    DDD
+    DDD

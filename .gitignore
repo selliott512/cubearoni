@@ -1,0 +1,10 @@
+*-gen.out
+*.bak
+*.new
+*.old
+*.crdb.gz
+*.swp
+*~
+__pycache__/
+/.idea/
+/target/

@@ -1,0 +1,10 @@
+Usage: Cross [-v] cross-file
+
+four line file format:
+  R|G|O|B location
+  R|G|O|B location ...
+flipped edge locations are negative
+
+bot: 111 211 311  mid: 121 221 321  top: 131 231 331
+     112 212 312       122 222 322       132 232 332
+     113 213 313       123 223 323       133 233 333

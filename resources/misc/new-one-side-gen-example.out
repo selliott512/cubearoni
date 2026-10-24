@@ -1,0 +1,17 @@
+For 1 indexes found value 1.
+For 12 indexes found value 2.
+For 150 indexes found value 3.
+For 1886 indexes found value 4.
+For 21916 indexes found value 5.
+For 242166 indexes found value 6.
+For 2292695 indexes found value 7.
+For 14228012 indexes found value 8.
+For 25293406 indexes found value 9.
+For 2825994 indexes found value 10.
+For 162 indexes found value 11.
+Generated database has length 44906400.
+Saved database "db/new-one-side.crdb.gz" in 3786 msecs with length 44906400.
+
+real	27m45.992s
+user	36m34.388s
+sys	0m4.176s

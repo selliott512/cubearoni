@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.selliott</groupId>
+  <artifactId>cubearoni</artifactId>
+  <version>0.9.0</version>
+
+  <name>cubearoni</name>
+  <url>http://www.selliott.org</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/license/mit</url>
+      <distribution>repo</distribution>
+      <comments>Applies to Cubearoni's original code; see THIRD-PARTY-NOTICES.md for AnimCube terms.</comments>
+    </license>
+  </licenses>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>21</maven.compiler.release>
+    <exec.mainClass>org.selliott.cubearoni.Cubearoni</exec.mainClass>
+    <teavm.version>0.13.1</teavm.version>
+    <teavm.minifying>true</teavm.minifying>
+    <teavm.sourceMapsGenerated>false</teavm.sourceMapsGenerated>
+    <teavm.sourceFilesCopied>false</teavm.sourceFilesCopied>
+    <teavm.debugInformationGenerated>false</teavm.debugInformationGenerated>
+    <teavm.optimizationLevel>ADVANCED</teavm.optimizationLevel>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>5.11.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- Optionally: parameterized tests support -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.teavm</groupId>
+      <artifactId>teavm-classlib</artifactId>
+      <version>${teavm.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.teavm</groupId>
+      <artifactId>teavm-jso</artifactId>
+      <version>${teavm.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>${project.basedir}</directory>
+        <targetPath>META-INF</targetPath>
+        <includes>
+          <include>LICENSE</include>
+          <include>THIRD-PARTY-NOTICES.md</include>
+        </includes>
+      </resource>
+    </resources>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.4.0</version>
+        </plugin>
+        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.3.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.13.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.12.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.6.1</version>
+        </plugin>
+
+        <!-- For mvn exec:java -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.5.1</version>
+          <configuration>
+            <mainClass>${exec.mainClass}</mainClass>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>animcube</id>
+      <properties>
+        <exec.mainClass>org.selliott.animcube.AnimCubeDesktop</exec.mainClass>
+      </properties>
+    </profile>
+    <profile>
+      <id>teavm</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.teavm</groupId>
+            <artifactId>teavm-maven-plugin</artifactId>
+            <version>${teavm.version}</version>
+            <dependencies>
+              <dependency>
+                <groupId>org.teavm</groupId>
+                <artifactId>teavm-classlib</artifactId>
+                <version>${teavm.version}</version>
+              </dependency>
+            </dependencies>
+            <executions>
+              <execution>
+                <id>teavm</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>compile</goal>
+                </goals>
+                <configuration>
+                  <targetType>JAVASCRIPT</targetType>
+                  <mainClass>org.selliott.cubearoni.web.CubearoniJSBridge</mainClass>
+                  <targetDirectory>${project.build.directory}/teavm</targetDirectory>
+                  <targetFileName>cubearoni.js</targetFileName>
+                  <jsModuleType>UMD</jsModuleType>
+                  <minifying>${teavm.minifying}</minifying>
+                  <sourceMapsGenerated>${teavm.sourceMapsGenerated}</sourceMapsGenerated>
+                  <sourceFilesCopied>${teavm.sourceFilesCopied}</sourceFilesCopied>
+                  <debugInformationGenerated>${teavm.debugInformationGenerated}</debugInformationGenerated>
+                  <optimizationLevel>${teavm.optimizationLevel}</optimizationLevel>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>teavm-debug</id>
+      <properties>
+        <teavm.minifying>false</teavm.minifying>
+        <teavm.sourceMapsGenerated>true</teavm.sourceMapsGenerated>
+        <teavm.sourceFilesCopied>true</teavm.sourceFilesCopied>
+        <teavm.debugInformationGenerated>true</teavm.debugInformationGenerated>
+        <teavm.optimizationLevel>SIMPLE</teavm.optimizationLevel>
+      </properties>
+    </profile>
+  </profiles>
+</project>

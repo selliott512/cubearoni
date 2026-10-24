@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cubearoni TeaVM Example</title>
+</head>
+<body>
+  <h1>Cubearoni TeaVM Example</h1>
+  <p>
+    This page demonstrates solving cubes in the browser using Cubearoni transpiled
+    to JavaScript by TeaVM. Paste a cube, <code>.cubearoni</code> format, then click Solve.
+  </p>
+
+  <p>
+    <label for="solverName">Solver:</label>
+    <input id="solverName" type="text" value="cfop">
+    <label for="userFace">Face:</label>
+    <input id="userFace" type="text" value="U" size="2">
+    <label for="stopAfterPhase">Phase:</label>
+    <input id="stopAfterPhase" type="text" value="" size="8">
+    <label for="limit">Limit:</label>
+    <input id="limit" type="number" value="0" min="0" step="1">
+    <label for="leftHanded">Left-handed:</label>
+    <input id="leftHanded" type="checkbox">
+  </p>
+
+  <p>
+    <label for="cubeText">Cube text:</label><br>
+    <textarea id="cubeText" rows="14" cols="40"></textarea>
+  </p>
+
+  <p>
+    <label for="moves">Moves to apply first (optional):</label><br>
+    <input id="moves" type="text" size="60" value="">
+  </p>
+
+  <p>
+    <label for="solverOptions">Solver options (optional, one <code>key=value</code> per line):</label><br>
+    <textarea id="solverOptions" rows="5" cols="80"></textarea>
+  </p>
+
+  <p>
+    <button id="solveButton" type="button">Solve</button>
+  </p>
+
+  <p id="status"></p>
+  <pre id="result"></pre>
+
+  <script src="../target/teavm/cubearoni.js"></script>
+  <script src="./web-teavm-ex.js"></script>
+</body>
+</html>
